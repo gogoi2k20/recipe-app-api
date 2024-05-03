@@ -39,3 +39,4 @@
 ## Mocking
 - Avoid relying on external services
 - Can't gurantee that those would be available
+- Using unittest.mock
