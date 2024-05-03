@@ -1,6 +1,11 @@
 name: Checks
 
-on: push
+on: 
+  push:
+    branches:
+      - main 
+      - '!Notes.md'
+      - '!readme.md'
 
 jobs:
   test-lint:
