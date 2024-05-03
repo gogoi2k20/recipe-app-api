@@ -40,3 +40,9 @@
 - Avoid relying on external services
 - Can't gurantee that those would be available
 - Using unittest.mock
+
+## API testing 
+- Comes from django REST framework 
+- Based on django's testclient
+- Make requests
+- Override authentication
