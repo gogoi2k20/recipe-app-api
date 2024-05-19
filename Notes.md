@@ -49,3 +49,14 @@
 
 ## Psycopg2
 - Package needed for django to connect to our db
+
+## Configuring the db
+- Goto settings.py file
+
+## Database race condition
+- In docker-compose we mention that the django app depends on db
+- when db service starts, after some time django app would try to connect to the db
+- But the db might still be in creating condition
+- Which will lead to crashing of the application
+- Might occur in local, even in prod
+- Solution: make django <strong>wait for db</strong>
