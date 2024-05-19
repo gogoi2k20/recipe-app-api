@@ -46,3 +46,6 @@
 - Based on django's testclient
 - Make requests
 - Override authentication
+
+## Psycopg2
+- Package needed for django to connect to our db
